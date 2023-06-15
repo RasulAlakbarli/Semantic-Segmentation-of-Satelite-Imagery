@@ -2,4 +2,16 @@
 This Project is Semantic Segmentation of High-Resolution Multi-Spectral Optical Satellite Images: A Deep Learning-based Approach for Monitoring Deforestation
 
 # Introduction
-Tropical deforestation is responsible for about 10 percent of global warming emissions. Activities to clear more land for humans lead to a loss of habitat for animals and increased deforestation. In ecology, millions of species interact in billions of different ways between them and with their environment. Because of urbanization, there is a higher demand for food in cities. In order to meet this demand, farmers have converted forests into agricultural fields. Coffee production and farming, just like ranching resulted in additional deforestation. Machine learning for ecology and sustainable natural resource management shows ecologists cutting-edge methods that can help in understanding complex systems with multiple interacting variables and to form predictive hypotheses from large datasets. Techniques from machine learning literature can complement traditional methodologies in ecology. The goal of this module is to provide practical examples of the application of machine learning methods in ecology underlying the importance of predictive ability for inference and decision-making. Artificial intelligence helps scientists develop new general models in ecology. Deforestation rates have significantly declined in recent years; stricter enforcement of effective policies is likely to further reduce the scale of deforestation.
+This project aims to detect deforestation using semantic segmentation techniques applied to satellite imagery. The project utilizes the U-Net model implemented in Keras to perform the segmentation task. After training the model for 5 epochs, an impressive validation accuracy of 98% was achieved.
+
+# Dataset
+The dataset used for this project consists of 20 satellite images in the .tif format, along with their corresponding masks in the .shp (shapefile) format. The images represent various areas of interest where deforestation may have occurred. The masks provide pixel-level annotations indicating deforested regions.
+
+# Model Architecture
+The U-Net model architecture is employed for the semantic segmentation task. This architecture is well-known for its effectiveness in image segmentation tasks. It consists of an encoder path and a decoder path, where the encoder captures the contextual information and the decoder reconstructs the segmentation map.
+
+# Usage
+1. Ensure that you have the necessary dependencies installed, including Keras, TensorFlow, and any additional libraries mentioned in the requirements file.
+2. Clone the repository to your local machine or download it as a ZIP file.
+3. Place the satellite images (.tif) in the 'train' directory and the corresponding masks (.shp) in the same directory.
+4. Run the 'main.ipynb' file.
