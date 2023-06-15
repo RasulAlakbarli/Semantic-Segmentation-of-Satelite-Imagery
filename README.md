@@ -15,3 +15,6 @@ The U-Net model architecture is employed for the semantic segmentation task. Thi
 2. Clone the repository to your local machine or download it as a ZIP file.
 3. Place the satellite images (.tif) in the 'train' directory and the corresponding masks (.shp) in the same directory.
 4. Run the 'main.ipynb' file.
+
+# License
+This project is licensed under the MIT License.
